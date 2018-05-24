@@ -1,0 +1,68 @@
+/* --- Start Modal ---  */
+html.modal_openoverflow {
+	overflow: hidden;
+}
+.modal {
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.modal {
+	padding: 0px!important;
+}
+.modal-dialog {
+	padding: 0;
+}
+.modal-content {
+	-webkit-transition: margin-top .2s;
+	-moz-transition: margin-top .2s;
+	transition: margin-top .2s;
+}
+.modal-body {
+	max-height: -webkit-calc(100vh - 210px);
+    max-height: -moz-calc(100vh - 210px);
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+.modal-footer {
+	margin-top: 0px;
+}
+.form-on-table .form-group {
+	text-align: left;
+}
+.form-on-table .form-group .chosen-container {
+	min-width: 159px;
+}
+.modal-maximize .modal-dialog {
+	width: 100%;
+}
+.modal-maximize .modal-body {
+	max-height: -webkit-calc(100vh - 130px);
+    max-height: -moz-calc(100vh - 130px);
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+    min-height: -webkit-calc(100vh - 130px);
+    min-height: -moz-calc(100vh - 130px);
+    min-height: calc(100vh - 130px);
+}
+@media only screen and (max-width: 767px) {
+	.modal-body {
+		max-height: -webkit-calc(100vh - 130px);
+		max-height: -moz-calc(100vh - 130px);
+		max-height: calc(100vh - 130px);
+		overflow-y: auto;
+	}
+}
+
+.modal-maximize{
+    width : 100%;    
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+	.modal-maximize .modal-body {
+		padding: 12px;
+	}
+}
+/* --- End Modal ---  */

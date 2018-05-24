@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Kanit';
+    src: url('fonts/google/kanit/kanit-light-webfont.eot');
+    src: url('fonts/google/kanit/kanit-light-webfont.eot?#iefix')format('embedded-opentype'), url('fonts/google/kanit/kanit-light-webfont.woff2')format('woff2'), url('fonts/google/kanit/kanit-light-webfont.woff')format('woff'), url('fonts/google/kanit/kanit-light-webfont.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Kanit';
+}
+
+body {
+    font-family: 'Kanit';
+}
+
+.modal>.modal-dialog>.modal-content>form>.modal-body>.table>thead>tr>th {
+    color: #555;
+    vertical-align: middle;
+}
+
+.valid-tooltip {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    width: 250px;
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(40, 167, 69, 0.8);
+    border-radius: .2rem;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid, .was-validated .custom-select:valid, .custom-select.is-valid {
+    border-color: #28a745;
+}
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus, .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.was-validated .form-control:valid~.valid-feedback, .was-validated .form-control:valid~.valid-tooltip, .form-control.is-valid~.valid-feedback, .form-control.is-valid~.valid-tooltip, .was-validated .custom-select:valid~.valid-feedback, .was-validated .custom-select:valid~.valid-tooltip, .custom-select.is-valid~.valid-feedback, .custom-select.is-valid~.valid-tooltip {
+    display: block;
+}
+
+.was-validated .form-check-input:valid+.form-check-label, .form-check-input.is-valid+.form-check-label {
+    color: #28a745;
+}
+
+.was-validated .custom-control-input:valid~.custom-control-indicator, .custom-control-input.is-valid~.custom-control-indicator {
+    background-color: rgba(40, 167, 69, 0.25);
+}
+
+.was-validated .custom-control-input:valid~.custom-control-description, .custom-control-input.is-valid~.custom-control-description {
+    color: #28a745;
+}
+
+.was-validated .custom-file-input:valid~.custom-file-control, .custom-file-input.is-valid~.custom-file-control {
+    border-color: #28a745;
+}
+
+.was-validated .custom-file-input:valid~.custom-file-control::before, .custom-file-input.is-valid~.custom-file-control::before {
+    border-color: inherit;
+}
+
+.was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.invalid-feedback {
+    display: none;
+    margin-top: .25rem;
+    font-size: .875rem;
+    color: #dc3545;
+}
+
+.invalid-tooltip {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    width: 250px;
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(220, 53, 69, 0.8);
+    border-radius: .2rem;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus, .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.was-validated .form-control:invalid~.invalid-feedback, .was-validated .form-control:invalid~.invalid-tooltip, .form-control.is-invalid~.invalid-feedback, .form-control.is-invalid~.invalid-tooltip, .was-validated .custom-select:invalid~.invalid-feedback, .was-validated .custom-select:invalid~.invalid-tooltip, .custom-select.is-invalid~.invalid-feedback, .custom-select.is-invalid~.invalid-tooltip {
+    display: block;
+}
+
+.was-validated .form-check-input:invalid+.form-check-label, .form-check-input.is-invalid+.form-check-label {
+    color: #dc3545;
+}
+
+.was-validated .custom-control-input:invalid~.custom-control-indicator, .custom-control-input.is-invalid~.custom-control-indicator {
+    background-color: rgba(220, 53, 69, 0.25);
+}
+
+.was-validated .custom-control-input:invalid~.custom-control-description, .custom-control-input.is-invalid~.custom-control-description {
+    color: #dc3545;
+}
+
+.was-validated .custom-file-input:invalid~.custom-file-control, .custom-file-input.is-invalid~.custom-file-control {
+    border-color: #dc3545;
+}
+
+.was-validated .custom-file-input:invalid~.custom-file-control::before, .custom-file-input.is-invalid~.custom-file-control::before {
+    border-color: inherit;
+}
+
+.was-validated .custom-file-input:invalid:focus, .custom-file-input.is-invalid:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.widhget-min-hight {
+    min-height: 600px;
+}
+
+.row-hover:hover {
+    background-color: #888888
+}
+
+.table-condensed tr {
+    color: #000;
+}
+
+.calendar-time, .daterangepicker_input {
+    color: #000;
+}
+
+/*#################  PHONE PAGE ###################*/
+
+.panel-success>.panel-heading {
+    background-image: -webkit-linear-gradient(top, #000000 0, #4a3c3c 100%);
+    background-image: -o-linear-gradient(top, #000000 0, #4a3c3c 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#4a3c3c));
+    background-image: linear-gradient(to bottom, #000000 0, #4a3c3c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#4a3c3c', GradientType=0);
+    background-repeat: repeat-x;
+}
+
+.panel-success>.panel-heading {
+    color: #ffffff;
+    background-color: #777777;
+    border-color: #ff0000;
+}
+
+.form-control:focus {
+    border-color: red;
+    transition: all 0.5s;
+}
+
+.btn-custom {
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    border-color: orange;
+    transition: all 0.5s;
+}
+
+.btn-custom:focus, .btn-custom:hover {
+    background-color: white;
+    background-position: 0 -15px;
+}
+
+.btn-custom:hover {
+    color: red;
+    background-color: white;
+    border-color: orange;
+}
+
+.custom-panel-title {
+    font-size: 20px;
+}
+
+.custom-add-phone {
+    font-size: 18px;
+}
+
+.logo-margin {
+    margin-top: 3%;
+}
+
+/*#################  ENDPHONE PAGE ###################*/
+
+/*#################  Random question PAGE ###################*/
+
+.question-title {
+    background-color: #333030;
+    color: white;
+    border-bottom: 25px solid red;
+    padding: 1px 0px 5px 10px;
+}
+
+.question-form {
+    background-color: white;
+    /* box-shadow: 5px 6px 20px 0px lightslategrey; */
+}
+
+.submit-margin {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.question {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 18px;
+}
+
+.question-top {
+    font-weight: 700;
+}
+
+/*#################   END Random question PAGE ###################*/
+
+/*#################  Random question pharse 2 PAGE ###################*/
+
+.question-title-2 {
+    background-color: #333030;
+    color: white;
+    border-bottom: 25px solid red;
+    padding: 15px 0px 10px 15px;
+}
+
+.card-title-font {
+    font-weight: 600;
+}
+
+/*#################   END Random question pharse 2 PAGE ###################*/
+
+.padding-zero {
+    padding: 0;
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100%;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 1024px) {
+    /*#################  PHONE PAGE ###################*/
+    .phone-form {
+        margin-right: 30%;
+        /* margin-left: 15%; */
+        margin-top: 41px;
+        width: 100%;
+    }
+    /*################# END  PHONE PAGE ###################*/
+    .override {
+        width: 121%;
+        margin-left: -104px;
+        max-width: 121%;
+    }
+}
+
+@media (max-width: 768px) {
+    .override {
+        width: 100%;
+        ;
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .sidebar {
+        width: 200px;
+    }
+    /*#################  PHONE PAGE ###################*/
+    .respon {
+        max-width: 50%;
+    }
+    .phone-form {
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-top: 41px;
+        max-width: 70%;
+    }
+    /*################# END  PHONE PAGE ###################*/
+}
+
+@media (max-width: 414px) {
+    /*#################  PHONE PAGE ###################*/
+    .custom-add-phone {
+        margin-bottom: 10px;
+    }
+    /*################# END  PHONE PAGE ###################*/
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {
+    /*#################  PHONE PAGE ###################*/
+    .custom-panel-title {
+        font-size: 18px;
+    }
+    /*################# END  PHONE PAGE ###################*/
+}
